@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Equipe2_1.CadastrarClientePage"
+             Title="Cadastrar cliente">
+
+    <ContentPage.Content>
+        <ScrollView>
+            <Grid Padding="10">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+
+                <!-- Title -->
+                <Label Grid.Row="0" 
+                       Text="Cadastrar cliente" 
+                       FontSize="Large"
+                       HorizontalOptions="Center" />
+
+                <!-- Name -->
+                <Label Grid.Row="1"
+                       Text="Nome:" />
+
+                <Entry Grid.Row="1"  
+                       Grid.Column="1"
+                       x:Name="NomeEntry" 
+                       Placeholder="Nome" />
+
+                <Label Grid.Row="1" 
+                       Grid.Column="2" 
+                       Text="*" 
+                       TextColor="Red" />
+
+                <!-- Surname -->
+                <Label Grid.Row="2" 
+                       Text="Sobrenome:" />
+
+                <Entry Grid.Row="2" 
+                       Grid.Column="1"
+                       x:Name="SobrenomeEntry"
+                       Placeholder="Sobrenome" />
+
+                <Label Grid.Row="2" 
+                       Grid.Column="2" 
+                       Text="*" 
+                       TextColor="Red" />
+
+                <!-- CPF -->
+                <Label Grid.Row="3" 
+                       Text="CPF:" />
+
+                <Entry Grid.Row="3" 
+                       Grid.Column="1" 
+                       x:Name="CPFEntry" 
+                       Placeholder="CPF" />
+
+                <Label Grid.Row="3" 
+                       Grid.Column="2" 
+                       Text="*" 
+                       TextColor="Red" />
+
+                <!-- Phone -->
+                <Label Grid.Row="4" 
+                       Text="Telefone:" />
+
+                <Entry Grid.Row="4"  
+                       Grid.Column="1" 
+                       x:Name="TelefoneEntry"
+                       Placeholder="Telefone" />
+
+                <Label Grid.Row="4" 
+                       Grid.Column="2"  
+                       Text="*" 
+                       TextColor="Red" />
+
+                <!-- Action Buttons -->
+                <StackLayout Grid.Row="5" 
+                             Orientation="Horizontal"
+                             HorizontalOptions="Center">
+
+                    <Button Text="❌" 
+                            Clicked="OnClearClicked" />
+
+                    <Button Text="✅" 
+                            Clicked="OnSaveClicked" />
+
+                </StackLayout>
+
+                <!-- Register Button -->
+                <Button Grid.Row="6" 
+                        Text="CADASTRAR-SE"
+                        HorizontalOptions="Center"
+                        VerticalOptions="End" 
+                        Clicked="OnRegisterClicked" />
+
+                <!-- Already Registered -->
+                <StackLayout Grid.Row="7" 
+                             Orientation="Horizontal" 
+                             HorizontalOptions="Center">
+
+                    <Label Text="Possuo cadastro>>" />
+
+                    <ImageButton Source="user_icon.png" 
+                                 Clicked="OnAlreadyRegisteredClicked" />
+                    
+                </StackLayout>
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
