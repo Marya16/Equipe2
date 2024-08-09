@@ -1,6 +1,6 @@
 using Microsoft.Maui.Controls;
 
-namespace YourNamespace
+namespace Equipe2_1
 {
     public partial class ConfirmationPage : ContentPage
     {

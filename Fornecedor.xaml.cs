@@ -1,7 +1,7 @@
 using Microsoft.Maui.Controls;
 using System.Collections.ObjectModel;
 
-namespace  Eq2
+namespace  Equipe2_1
 {
     public partial class MainPage : ContentPage
     {

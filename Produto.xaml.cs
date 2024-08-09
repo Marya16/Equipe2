@@ -1,6 +1,6 @@
 using Microsoft.Maui.Controls;
 
-namespace Eq2
+namespace Equipe2_1
 {
     public partial class ProductPage : ContentPage
     {
