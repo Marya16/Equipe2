@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Eq2.ProductPage"
+             Title="Produto">
+    <ContentPage.Content>
+        <Grid Padding="10" BackgroundColor="LightBlue">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            
+            <Label Text="Produto" 
+                   FontSize="Large" 
+                   HorizontalOptions="Center" 
+                   Grid.Row="0" 
+                   Grid.ColumnSpan="2" />
+
+            <Label Text="Tipo produto:" 
+                   Grid.Row="1" 
+                   Grid.Column="0" />
+
+            <Entry x:Name="TipoProdutoEntry" 
+                   Grid.Row="1" 
+                   Grid.Column="1" />
+
+            <Label Text="Fornecedor:" 
+                   Grid.Row="2" 
+                   Grid.Column="0" />
+
+            <Entry x:Name="FornecedorEntry" 
+                   Grid.Row="2" 
+                   Grid.Column="1" />
+
+            <Label Text="Código do produto:"
+                   Grid.Row="3" 
+                   Grid.Column="0" />
+
+            <Entry x:Name="CodigoProdutoEntry" 
+                   Grid.Row="3" 
+                   Grid.Column="1" />
+
+            <Label Text="Marca:" 
+                   Grid.Row="4" 
+                   Grid.Column="0" />
+
+            <Entry x:Name="MarcaEntry" 
+                   Grid.Row="4" 
+                   Grid.Column="1" />
+
+            <Label Text="Unidade:"
+                   Grid.Row="5" 
+                   Grid.Column="0" />
+
+            <Picker x:Name="UnidadePicker" 
+                    Grid.Row="5"
+                    Grid.Column="1">
+
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Unidade 1</x:String>
+                        <x:String>Unidade 2</x:String>
+                        <x:String>Unidade 3</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+
+            <Label Text="Cor:" 
+                    Grid.Row="6"
+                    Grid.Column="0" />
+
+            <Entry x:Name="CorEntry" 
+                    Grid.Row="6" 
+                    Grid.Column="1" />
+
+            <StackLayout Orientation="Horizontal" 
+                         HorizontalOptions="Center" 
+                         Grid.Row="7"
+                         Grid.ColumnSpan="2" 
+                         Spacing="20">
+
+                <Button Text="Salvar Dados"
+                        BackgroundColor="Green"
+                        TextColor="White"
+                        Clicked="OnSalvarDadosClicked" />
+
+                <Button Text="Apagar Dados"
+                        BackgroundColor="Red"
+                        TextColor="White"
+                        Clicked="OnApagarDadosClicked" />
+
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

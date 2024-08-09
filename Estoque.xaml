@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Eq2.CadastroEstoquePage"
+             BackgroundColor="LightBlue">
+    <ScrollView>
+        <StackLayout Padding="20">
+            <Label Text="Cadastro de Estoque" 
+                   FontSize="Large" 
+                   HorizontalOptions="Center"
+                   Margin="0,10,0,20"/>
+
+            <Grid ColumnDefinitions="Auto, *, Auto, *"
+                  RowDefinitions="Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto">
+
+                <Label Text="Nome do produto:" 
+                       Grid.Row="0" 
+                       Grid.Column="0"/>
+
+                <Entry Grid.Row="0"
+                       Grid.Column="1" 
+                       Grid.ColumnSpan="3"/>
+                
+                <Label Text="Código do sistema:" 
+                       Grid.Row="1" 
+                       Grid.Column="0"/>
+
+                <Entry Grid.Row="1"
+                       Grid.Column="1" 
+                       Grid.ColumnSpan="3"/>
+                
+                <Label Text="Preço de custo:" 
+                       Grid.Row="2"
+                       Grid.Column="0"/>
+
+                <Entry Grid.Row="2" 
+                       Grid.Column="1"/>
+                
+                <Label Text="Código do produto:"
+                       Grid.Row="2" 
+                       Grid.Column="2"/>
+
+                <Entry Grid.Row="2"
+                       Grid.Column="3"/>
+                
+                <Label Text="Fornecedor:" 
+                       Grid.Row="3" 
+                       Grid.Column="0"/>
+
+                <Entry Grid.Row="3" 
+                       Grid.Column="1"/>
+                
+                <Label Text="Código do Fornecedor:" 
+                       Grid.Row="3" 
+                       Grid.Column="2"/>
+
+                <Entry Grid.Row="3" 
+                       Grid.Column="3"/>
+                
+                <Label Text="Unidade:"
+                       Grid.Row="4" 
+                       Grid.Column="2"/>
+
+                <Entry Grid.Row="4"
+                       Grid.Column="3"/>
+                
+                <Label Text="Peso Líquido (Kg):"
+                       Grid.Row="5" 
+                       Grid.Column="0"/>
+
+                <Entry Grid.Row="5" 
+                       Grid.Column="1"/>
+                
+                <Label Text="Peso Bruto:"
+                       Grid.Row="5" 
+                       Grid.Column="2"/>
+
+                <Entry Grid.Row="5"
+                       Grid.Column="3"/>
+                
+                <Label Text="Marca:"
+                       Grid.Row="6" 
+                       Grid.Column="2"/>
+
+                <Entry Grid.Row="6" 
+                       Grid.Column="3"/>
+                
+                <Label Text="Email:" 
+                       Grid.Row="7" 
+                       Grid.Column="0"/>
+
+                <Entry Grid.Row="7"
+                       Grid.Column="1" 
+                       Grid.ColumnSpan="3"/>
+                
+                <Button Text="CADASTRAR-SE"
+                        Grid.Row="8"
+                        Grid.ColumnSpan="4"
+                        BackgroundColor="SkyBlue"
+                        TextColor="White"
+                        HorizontalOptions="Center"
+                        Margin="0,20,0,0"
+                        Clicked="OnRegisterClicked"/>
+            </Grid>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

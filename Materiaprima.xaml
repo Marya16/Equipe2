@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Eq2.MateriaPrimaPage"
+
+             BackgroundColor="LightBlue">
+    <ScrollView>
+        <StackLayout Padding="20">
+            <Label Text="Matéria Prima" 
+                   FontSize="Large" 
+                   HorizontalOptions="Center"
+                   Margin="0,10,0,20"/>
+
+            <Grid ColumnDefinitions="Auto, *, Auto, *"
+                  RowDefinitions="Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto">
+
+                <Label Text="Nome:" 
+                       Grid.Row="0" 
+                       Grid.Column="0"/>
+
+                <Entry Grid.Row="0"
+                       Grid.ColumnSpan="3"
+                       Grid.Column="1"/>
+                
+                <Label Text="Descrição:" 
+                       Grid.Row="1" 
+                       Grid.Column="0"/>
+
+                <Entry Grid.Row="1" 
+                       Grid.ColumnSpan="2" 
+                       Grid.Column="1"/>
+                
+                <Label Text="Marca:"
+                       Grid.Row="1"
+                       Grid.Column="2"/>
+
+                <Entry Grid.Row="1" 
+                       Grid.Column="3"/>
+                
+                <Label Text="Código do produto:" 
+                       Grid.Row="2" 
+                       Grid.Column="0"/>
+
+                <Entry Grid.Row="2" 
+                       Grid.Column="1"/>
+                
+                <Label Text="Cor:" 
+                       Grid.Row="2"
+                       Grid.Column="2"/>
+
+                <Entry Grid.Row="2" 
+                       Grid.Column="3"/>
+                
+                <Label Text="Tamanho:" 
+                       Grid.Row="3"
+                       Grid.Column="2"/>
+
+                <Entry Grid.Row="3" 
+                       Grid.Column="3"/>
+                
+                <Label Text="Unidade de medida:"
+                       Grid.Row="4" 
+                       Grid.Column="0"/>
+
+                <Picker Grid.Row="4" 
+                        Grid.ColumnSpan="3"
+                        Grid.Column="1"/>
+                
+                <Button Text="SALVAR"
+                        Grid.Row="5"
+                        Grid.ColumnSpan="4"
+                        BackgroundColor="SkyBlue"
+                        TextColor="White"
+                        HorizontalOptions="Center"
+                        Margin="0,20,0,0"
+                        Clicked="OnSaveClicked"/>
+                
+                <Button Text="CANCELAR"
+                        Grid.Row="6"
+                        Grid.ColumnSpan="4"
+                        BackgroundColor="Gray"
+                        TextColor="White"
+                        HorizontalOptions="Center"
+                        Margin="0,10,0,0"
+                        Clicked="OnCancelClicked"/>
+            </Grid>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

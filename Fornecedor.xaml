@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class=" Eq2.MainPage"
+             BackgroundColor="LightBlue">
+    <ScrollView>
+        <StackLayout Padding="20">
+            <Label Text="Cadastrar fornecedor" 
+                   FontSize="Large" 
+                   HorizontalOptions="Center"
+                   Margin="0,10,0,20"/>
+
+            <Grid ColumnDefinitions="Auto, *, Auto, *"
+                  RowDefinitions="Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto">
+
+                <Label Text="Código:" 
+                       Grid.Row="0"
+                       Grid.Column="0"/>
+
+                <Entry Grid.Row="0" 
+                       Grid.Column="1"/>
+                
+                <Label Text="Razão Social:"
+                       Grid.Row="0" 
+                       Grid.Column="2"/>
+
+                <Entry Grid.Row="0" 
+                       Grid.Column="3"/>
+                
+                <Label Text="CPF/CNPJ:" 
+                       Grid.Row="1"
+                       Grid.Column="2"/>
+
+                <Entry Grid.Row="1" 
+                       Grid.Column="3"/>
+                
+                <Label Text="Contato 1:" 
+                       Grid.Row="2" 
+                       Grid.Column="0"/>
+
+                <Entry Grid.Row="2" 
+                       Grid.Column="1"/>
+                
+                <Label Text="Contato 2:" 
+                       Grid.Row="2" 
+                       Grid.Column="2"/>
+
+                <Entry Grid.Row="2" 
+                       Grid.Column="3"/>
+                
+                <Label Text="Contato 3:" 
+                       Grid.Row="3" 
+                       Grid.Column="2"/>
+
+                <Entry Grid.Row="3" 
+                       Grid.Column="3"/>
+                
+                <Label Text="Fone 1:" 
+                       Grid.Row="4" 
+                       Grid.Column="0"/>
+
+                <Entry Grid.Row="4" 
+                       Grid.Column="1"/>
+                
+                <Label Text="Fone 2:" 
+                       Grid.Row="4" 
+                       Grid.Column="2"/>
+
+                <Entry Grid.Row="4" 
+                       Grid.Column="3"/>
+                
+                <Label Text="Fone 3:" 
+                       Grid.Row="5" 
+                       Grid.Column="2"/>
+
+                <Entry Grid.Row="5" 
+                       Grid.Column="3"/>
+                
+                <Label Text="Email:" 
+                       Grid.Row="6" 
+                       Grid.Column="0"/>
+
+                <Entry Grid.Row="6" 
+                       Grid.ColumnSpan="3" 
+                       Grid.Column="1"/>
+                
+                <Label Text="Cidade:" 
+                       Grid.Row="7" 
+                       Grid.Column="0"/>
+
+                <Entry Grid.Row="7" 
+                       Grid.Column="1"/>
+                
+                <Label Text="Bairro:" 
+                       Grid.Row="7"  
+                       Grid.Column="2"/>
+
+                <Entry Grid.Row="7" 
+                       Grid.Column="3"/>
+                
+                <Label Text="N°:" 
+                       Grid.Row="8" 
+                       Grid.Column="2"/>
+
+                <Entry Grid.Row="8" 
+                       Grid.Column="3"/>
+                
+                <Label Text="Matéria Prima:" 
+                       Grid.Row="9" 
+                       Grid.Column="0"/>
+
+          <StackLayout Grid.Row="9" 
+                       Grid.Column="1"
+                       Grid.ColumnSpan="3">
+
+                    <ListView x:Name="MateriaPrimaList"
+                              HasUnevenRows="True">
+
+                        <ListView.Header>
+
+                            <Grid>
+                                <Label Text="Matéria Prima"/>
+                            </Grid>
+
+                        </ListView.Header>
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+
+                                    <Label Text="{Binding}" 
+                                           FontSize="Medium"/>
+                                           
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                    <Button Text="+" Clicked="OnAddMateriaPrimaClicked"/>
+                </StackLayout>
+                
+                <Button Text="CADASTRAR-SE"
+                        Grid.Row="10"
+                        Grid.ColumnSpan="4"
+                        BackgroundColor="SkyBlue"
+                        TextColor="White"
+                        HorizontalOptions="Center"/>
+            </Grid>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

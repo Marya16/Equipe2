@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Eq2.EmbroideryPage"
+             Title="Bordado">
+    <ContentPage.Content>
+        <Grid Padding="10" BackgroundColor="LightBlue">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            
+            <Label Text="Bordado"
+                   FontSize="Large"
+                   HorizontalOptions="Center"
+                   Grid.Row="0" 
+                   Grid.ColumnSpan="2" />
+
+            <Label Text="Prazo:" 
+                   Grid.Row="1" 
+                   Grid.Column="0" />
+
+            <Entry x:Name="PrazoEntry" 
+                   Grid.Row="1"
+                   Grid.Column="1" />
+
+            <Label Text="Entrada:" 
+                   Grid.Row="2" 
+                   Grid.Column="0" />
+
+            <Entry x:Name="EntradaEntry" 
+                   Grid.Row="2" 
+                   Grid.Column="1" />
+
+            <Label Text="Produto:" 
+                   Grid.Row="3" 
+                   Grid.Column="0" />
+
+            <Entry x:Name="ProdutoEntry" 
+                   Grid.Row="3" 
+                   Grid.Column="1" />
+
+            <Label Text="Quantidade:" 
+                   Grid.Row="4"
+                   Grid.Column="0" />
+
+            <Picker x:Name="QuantidadePicker"
+                    Grid.Row="4"
+                    Grid.Column="1">
+
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>1</x:String>
+                        <x:String>2</x:String>
+                        <x:String>3</x:String>
+                        <x:String>4</x:String>
+                        <x:String>5</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+
+            <StackLayout Orientation="Vertical"
+                         HorizontalOptions="Center"
+                         Grid.Row="5" 
+                         Grid.ColumnSpan="2"
+                         Spacing="10">
+
+                <Button Text="Salvar Dados"
+                        BackgroundColor="Green" 
+                        TextColor="White"
+                        Clicked="OnSalvarDadosClicked" />
+
+                <Button Text="Apagar Dados" 
+                        BackgroundColor="Red"
+                        TextColor="White"
+                        Clicked="OnApagarDadosClicked" />
+
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

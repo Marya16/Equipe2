@@ -1,0 +1,45 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Eq2.MainPage"
+
+             BackgroundColor="LightBlue">
+            <StackLayout Padding="20">
+
+        <Label Text="Listar Estoque"
+               FontSize="24"
+               HorizontalOptions="Center"
+               Margin="0,20,0,20"/>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+
+            <Label Text="Nome do produto" 
+                   Grid.Row="0"
+                   Grid.Column="0"/>
+
+            <Label Text="Quantidade" 
+                   Grid.Row="0" 
+                   Grid.Column="1"/>
+
+            <Label Text="Peso"
+                   Grid.Row="0"
+                   Grid.Column="2"/>
+
+            <!-- Aqui você pode adicionar os dados do estoque -->
+            
+            <Button Text="SALVAR" 
+                    Grid.Row="1"
+                    Grid.ColumnSpan="4"
+                    HorizontalOptions="Center" 
+                    Margin="0,20,0,0"/>
+        </Grid>
+    </StackLayout>
+</ContentPage>
