@@ -1,42 +1,13 @@
+using LiteDB;
+
 namespace Modelos;
  public class Bordado
  {
-    int ID;
-    string Produto;
-    int ID_Quantidade;
-    string Entrada;
-    string Prazo;
+    [BsonId]
+    public int ID { get; set;}
+    public string Produto { get; set;}
+    public int ID_Quantidade { get; set;}
+    public  string Entrada { get; set;}
+    public string Prazo { get; set;}
 
-public void SetID (int ID)
-{
-    this.ID = ID;
-}
-public int GetID ()
-{  
-    return ID;
-}
-public void SetProduto (string Produto)
-{
-    this.Produto = Produto;
-}
-public string GetProduto ()
-{
-    return Produto;
-}
-public void SetID_Quantidade (int ID_Quantidade)
-{ 
-    this.ID_Quantidade = ID_Quantidade;
-}
-public int GetID_Quantidade ()
-{
-    return ID_Quantidade; 
-}
-public void SetEntrada (string Entrada)
-{
-    this.Entrada = Entrada;
-}
-public string GetEntrada ()
-{
-    return Entrada;
-}
  }

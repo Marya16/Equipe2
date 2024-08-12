@@ -12,47 +12,107 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Equipe2_1
-build_property.ProjectDir = C:\Users\Aluno\Equipe2-1\
+build_property.ProjectDir = C:\Users\Aluno\Equipe2\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 
-[C:/Users/Aluno/Equipe2-1/App.xaml]
+[C:/Users/Aluno/Equipe2/Apagar.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Equipe2_1.Apagar.xaml
+build_metadata.AdditionalFiles.TargetPath = Apagar.xaml
+build_metadata.AdditionalFiles.RelativePath = Apagar.xaml
+
+[C:/Users/Aluno/Equipe2/App.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Equipe2_1.App.xaml
 build_metadata.AdditionalFiles.TargetPath = App.xaml
 build_metadata.AdditionalFiles.RelativePath = App.xaml
 
-[C:/Users/Aluno/Equipe2-1/AppShell.xaml]
+[C:/Users/Aluno/Equipe2/AppShell.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Equipe2_1.AppShell.xaml
 build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
 build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
 
-[C:/Users/Aluno/Equipe2-1/CadastroCliente.xaml]
+[C:/Users/Aluno/Equipe2/Bordado.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Equipe2_1.Bordado.xaml
+build_metadata.AdditionalFiles.TargetPath = Bordado.xaml
+build_metadata.AdditionalFiles.RelativePath = Bordado.xaml
+
+[C:/Users/Aluno/Equipe2/CadastroCliente.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Equipe2_1.CadastroCliente.xaml
 build_metadata.AdditionalFiles.TargetPath = CadastroCliente.xaml
 build_metadata.AdditionalFiles.RelativePath = CadastroCliente.xaml
 
-[C:/Users/Aluno/Equipe2-1/Cliente.xaml]
+[C:/Users/Aluno/Equipe2/Cliente.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Equipe2_1.Cliente.xaml
 build_metadata.AdditionalFiles.TargetPath = Cliente.xaml
 build_metadata.AdditionalFiles.RelativePath = Cliente.xaml
 
-[C:/Users/Aluno/Equipe2-1/MainPage.xaml]
+[C:/Users/Aluno/Equipe2/Corte.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Equipe2_1.Corte.xaml
+build_metadata.AdditionalFiles.TargetPath = Corte.xaml
+build_metadata.AdditionalFiles.RelativePath = Corte.xaml
+
+[C:/Users/Aluno/Equipe2/Costura.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Equipe2_1.Costura.xaml
+build_metadata.AdditionalFiles.TargetPath = Costura.xaml
+build_metadata.AdditionalFiles.RelativePath = Costura.xaml
+
+[C:/Users/Aluno/Equipe2/Enviocorte.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Equipe2_1.Enviocorte.xaml
+build_metadata.AdditionalFiles.TargetPath = Enviocorte.xaml
+build_metadata.AdditionalFiles.RelativePath = Enviocorte.xaml
+
+[C:/Users/Aluno/Equipe2/Estoque.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Equipe2_1.Estoque.xaml
+build_metadata.AdditionalFiles.TargetPath = Estoque.xaml
+build_metadata.AdditionalFiles.RelativePath = Estoque.xaml
+
+[C:/Users/Aluno/Equipe2/Fornecedor.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Equipe2_1.Fornecedor.xaml
+build_metadata.AdditionalFiles.TargetPath = Fornecedor.xaml
+build_metadata.AdditionalFiles.RelativePath = Fornecedor.xaml
+
+[C:/Users/Aluno/Equipe2/Listarestoque.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Equipe2_1.Listarestoque.xaml
+build_metadata.AdditionalFiles.TargetPath = Listarestoque.xaml
+build_metadata.AdditionalFiles.RelativePath = Listarestoque.xaml
+
+[C:/Users/Aluno/Equipe2/MainPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Equipe2_1.MainPage.xaml
 build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
 build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
 
-[C:/Users/Aluno/Equipe2-1/Resources/Styles/Colors.xaml]
+[C:/Users/Aluno/Equipe2/Materiaprima.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Equipe2_1.Materiaprima.xaml
+build_metadata.AdditionalFiles.TargetPath = Materiaprima.xaml
+build_metadata.AdditionalFiles.RelativePath = Materiaprima.xaml
+
+[C:/Users/Aluno/Equipe2/Produto.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Equipe2_1.Produto.xaml
+build_metadata.AdditionalFiles.TargetPath = Produto.xaml
+build_metadata.AdditionalFiles.RelativePath = Produto.xaml
+
+[C:/Users/Aluno/Equipe2/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Equipe2_1.Resources.Styles.Colors.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
 
-[C:/Users/Aluno/Equipe2-1/Resources/Styles/Styles.xaml]
+[C:/Users/Aluno/Equipe2/Resources/Styles/Styles.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Equipe2_1.Resources.Styles.Styles.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml

@@ -1,32 +1,12 @@
+using LiteDB;
+
 namespace Modelos;
 public class Estoque
 {
-    string NomedoProduto;
-    int ID_Produto;
-    decimal Preço;
+   [BsonId]
+    public int ID  { get; set;}
+    public string NomedoProduto { get; set;}
+    public int ID_Produto { get; set;}
+    public decimal Preço { get; set;}
 
-public void SetNomedoProduto (string NomedoProduto)
- { 
-    this.NomedoProduto = NomedoProduto;
- }
- public string GetNomedoProduto ()
- {
-    return NomedoProduto;
- }
- public void SetID_Produto (int ID_Produto)
- {
-    this.ID_Produto = ID_Produto;
- }
- public int GetID_Produto ()
- { 
-    return ID_Produto;
- }
- public void SetPreço (decimal Preço)
-{
-    this.Preço = Preço;
-}
-public decimal GetPreço ()
-{
-    return Preço;
-}
 }
