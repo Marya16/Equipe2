@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Equipe2_1.ClientePage"
+             Title="Cliente">
+
+    <ContentPage.Content>
+        <Frame BackgroundColor="White" 
+               CornerRadius="20" 
+               Padding="30" 
+               Margin="20">
+
+            <StackLayout>
+                <Label Text="Cliente" 
+                       FontSize="Large" 
+                       HorizontalOptions="Center"
+                       TextColor="Black"/>
+
+                <BoxView HeightRequest="1" 
+                         BackgroundColor="Black" 
+                         Margin="0,10,0,20"/>
+
+                <StackLayout Orientation="Horizontal" 
+                             HorizontalOptions="Center">
+
+               <Entry x:Name="SearchEntry" 
+                      Placeholder="Buscar cliente..."
+                      WidthRequest="200"/>
+
+                    <Button BackgroundColor="White"
+                            BorderColor="Black" 
+                            BorderWidth="1" 
+                            HeightRequest="40" 
+                            WidthRequest="40"
+                            Clicked="OnSearchClicked"/>
+
+                </StackLayout>
+
+                <Frame CornerRadius="10" 
+                       Margin="0,20,0,0">
+
+            <ScrollView>
+                <StackLayout>
+                    <!-- Sample Items -->
+                    <Label Text="Josefina..." 
+                            FontSize="Medium" 
+                            Padding="10" />
+
+                    <Label Text="Josefina..." 
+                            FontSize="Medium"
+                            Padding="10" />
+
+                            <!-- Add more items here -->
+                        </StackLayout>
+                    </ScrollView>
+                </Frame>
+
+                <Button x:Name="AddButton" 
+                        BackgroundColor="DarkGray" 
+                        CornerRadius="20" 
+                        WidthRequest="50" 
+                        HeightRequest="50"
+                        VerticalOptions="End" 
+                        HorizontalOptions="End"
+                        Clicked="OnAddClicked"/>
+            </StackLayout>
+        </Frame>
+    </ContentPage.Content>
+</ContentPage>
