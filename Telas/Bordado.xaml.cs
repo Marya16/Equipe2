@@ -2,9 +2,9 @@ using Microsoft.Maui.Controls;
 
 namespace Equipe2_1
 {
-    public partial class EmbroideryPage : ContentPage
+    public partial class BordadoPage : ContentPage
     {
-        public EmbroideryPage()
+        public BordadoPage ()
         {
             InitializeComponent();
         }
@@ -20,7 +20,7 @@ namespace Equipe2_1
             PrazoEntry.Text = string.Empty;
             EntradaEntry.Text = string.Empty;
             ProdutoEntry.Text = string.Empty;
-            QuantidadePicker.SelectedIndex = -1;
+           
         }
     }
 }

@@ -1,11 +1,12 @@
 using Microsoft.Maui.Controls;
 using System;
+using Modelos;
 
 namespace Equipe2_1
 {
-    public partial class MainPage : ContentPage
+    public partial class CortePage : ContentPage
     {
-        public MainPage()
+        public CortePage ()
         {
             InitializeComponent();
         }

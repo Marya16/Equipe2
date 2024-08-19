@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Equipe2_1.EmbroideryPage"
+             x:Class="Equipe2_1.BordadoPage"
              Title="Bordado">
     <ContentPage.Content>
         <Grid Padding="10" BackgroundColor="LightBlue">
@@ -47,25 +47,6 @@
             <Entry x:Name="ProdutoEntry" 
                    Grid.Row="3" 
                    Grid.Column="1" />
-
-            <Label Text="Quantidade:" 
-                   Grid.Row="4"
-                   Grid.Column="0" />
-
-            <Picker x:Name="QuantidadePicker"
-                    Grid.Row="4"
-                    Grid.Column="1">
-
-                <Picker.ItemsSource>
-                    <x:Array Type="{x:Type x:String}">
-                        <x:String>1</x:String>
-                        <x:String>2</x:String>
-                        <x:String>3</x:String>
-                        <x:String>4</x:String>
-                        <x:String>5</x:String>
-                    </x:Array>
-                </Picker.ItemsSource>
-            </Picker>
 
             <StackLayout Orientation="Vertical"
                          HorizontalOptions="Center"

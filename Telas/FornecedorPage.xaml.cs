@@ -3,11 +3,11 @@ using System.Collections.ObjectModel;
 
 namespace  Equipe2_1
 {
-    public partial class Fornecedor : ContentPage
+    public partial class FornecedorPage : ContentPage
     {
         private ObservableCollection<string> materiaPrimaList;
 
-        public Fornecedor ()
+        public FornecedorPage ()
         {
             InitializeComponent();
             materiaPrimaList = new ObservableCollection<string>();

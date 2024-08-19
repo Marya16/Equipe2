@@ -2,9 +2,9 @@ using Microsoft.Maui.Controls;
 
 namespace Equipe2_1
 {
-    public partial class CadastroEstoquePage : ContentPage
+    public partial class EstoquePage : ContentPage
     {
-        public CadastroEstoquePage()
+        public EstoquePage()
         {
             InitializeComponent();
         }

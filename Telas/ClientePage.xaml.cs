@@ -1,11 +1,11 @@
 using Microsoft.Maui.Controls;
 using System;
 
-namespace YourNamespace
+namespace Equipe2_1
 {
-    public partial class MainPage : ContentPage
+    public partial class ClientePage : ContentPage
     {
-        public MainPage()
+        public ClientePage ()
         {
             InitializeComponent();
         }

@@ -2,9 +2,9 @@ using Microsoft.Maui.Controls;
 
 namespace Equipe2_1
 {
-    public partial class SewingPage : ContentPage
+    public partial class CosturaPage : ContentPage
     {
-        public SewingPage()
+        public CosturaPage()
         {
             InitializeComponent();
         }

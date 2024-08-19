@@ -3,9 +3,9 @@ using System;
 
 namespace Equipe2_1
 {
-    public partial class Enviocorte : ContentPage
+    public partial class EnviocortePage: ContentPage
     {
-        public Enviocorte()
+        public EnviocortePage ()
         {
             InitializeComponent();
         }
