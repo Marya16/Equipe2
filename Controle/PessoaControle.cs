@@ -16,7 +16,7 @@ public class PessoaControle : BaseControle
   public virtual Registro? Ler(int idPessoa)
   {
     var collection = liteDB.GetCollection<Pessoa>(NomeDaTabela);
-    return collection.FindOne(d => d.Id == idPessoa);
+    return collection.FindOne(d => d.ID == idPessoa);
   }
 
   //----------------------------------------------------------------------------

@@ -1,23 +1,21 @@
 using Microsoft.Maui.Controls;
-using System;
 
 namespace Equipe2_1
-{
-    public partial class ClientePage : ContentPage
+{ 
+    public partial class ClientePage: ContentPage
     {
-        public ClientePage ()
+        public ClientePage()
         {
             InitializeComponent();
         }
-
-        private void OnSearchClicked(object sender, EventArgs e)
-        {
-            // Handle search logic here
-        }
-
-        private void OnAddClicked(object sender, EventArgs e)
-        {
-            // Handle add new client logic here
-        }
+      private void VoltarClienteClicked (object sender, EventArgs e)  
+      {
+        Application.Current.MainPage= new MainPage();
+      }
+      private void CadastrarClienteClicked (object sender, EventArgs e)  
+      {
+        Application.Current.MainPage= new CadastroClientePage();
+      }
+      // Aqui você pode adicionar event handlers e outras lógicas 
     }
 }

@@ -16,7 +16,7 @@ public class MateriaprimaControle : BaseControle
   public virtual Registro? Ler(int idMateriaprima)
   {
     var collection = liteDB.GetCollection<Materiaprima>(NomeDaTabela);
-    return collection.FindOne(d => d.Id == idMateriaprima);
+    return collection.FindOne(d => d.ID == idMateriaprima);
   }
 
   //----------------------------------------------------------------------------

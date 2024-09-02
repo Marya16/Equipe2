@@ -1,7 +1,7 @@
 using LiteDB;
 
 namespace Modelos;
-public class Corte
+public class Corte : Registro
 {
     [BsonId]
     public int ID  { get; set;}

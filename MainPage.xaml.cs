@@ -1,24 +1,46 @@
-﻿namespace Equipe2_1;
+﻿
 
-public partial class MainPage : ContentPage
+namespace Equipe2_1
 {
-	int count = 0;
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+        }
 
-	public MainPage()
-	{
-		InitializeComponent();
-	}
+        private void OnClienteClicked(object sender, EventArgs e)
+        {
+			Application.Current.MainPage= new ClientePage();
+            // Navigate to the Cliente page
+            // Navigation.PushAsync(new ClientePage());
+        }
 
-	private void OnCounterClicked(object sender, EventArgs e)
-	{
-		count++;
+        private void OnFornecedorClicked(object sender, EventArgs e)
+        { 
+			Application.Current.MainPage= new FornecedorPage();
+            // Navigate to the Fornecedor page
+            // Navigation.PushAsync(new FornecedorPage());
+        }
 
-		if (count == 1)
-			CounterBtn.Text = $"Clicked {count} time";
-		else
-			CounterBtn.Text = $"Clicked {count} times";
+        private void OnEstoqueClicked(object sender, EventArgs e)
+        {
+			Application.Current.MainPage= new EstoquePage();
+            // Navigate to the Estoque page
+            // Navigation.PushAsync(new EstoquePage());
+        }
 
-		SemanticScreenReader.Announce(CounterBtn.Text);
-	}
+        private void OnCorteClicked(object sender, EventArgs e)
+        {
+			Application.Current.MainPage= new CortePage();
+            // Navigate to the Corte page
+            // Navigation.PushAsync(new CortePage());
+        }
+
+        private void OnBordadoClicked(object sender, EventArgs e)
+        {
+            // Navigate to the Bordado page
+            // Navigation.PushAsync(new BordadoPage());
+        }
+    }
 }
-

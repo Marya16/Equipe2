@@ -16,7 +16,7 @@ public class FornecedorMPControle : BaseControle
   public virtual Registro? Ler(int idFornecedorMP)
   {
     var collection = liteDB.GetCollection<FornecedorMP>(NomeDaTabela);
-    return collection.FindOne(d => d.Id == idFornecedorMP);
+    return collection.FindOne(d => d.ID == idFornecedorMP);
   }
 
   //----------------------------------------------------------------------------

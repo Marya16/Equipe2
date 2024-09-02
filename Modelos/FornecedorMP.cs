@@ -2,7 +2,7 @@ using LiteDB;
 
 namespace Modelos;
 
-public class FornecedorMP
+public class FornecedorMP : Registro
 {
     [BsonId]
     public int ID  { get; set;}

@@ -16,7 +16,7 @@ public class CorteControle : BaseControle
   public virtual Registro? Ler(int idCorte)
   {
     var collection = liteDB.GetCollection<Corte>(NomeDaTabela);
-    return collection.FindOne(d => d.Id == idCorte);
+    return collection.FindOne(d => d.ID == idCorte);
   }
 
   //----------------------------------------------------------------------------

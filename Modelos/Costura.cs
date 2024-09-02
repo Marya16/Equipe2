@@ -1,7 +1,7 @@
 using LiteDB;
 
 namespace Modelos;
-public class Costura
+public class Costura : Registro
 {
     [BsonId]
     public int ID { get; set;}

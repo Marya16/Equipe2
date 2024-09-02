@@ -2,7 +2,7 @@ using LiteDB;
 
 namespace Modelos;
 
-public class Materiaprima
+public class Materiaprima : Registro
 {
     [BsonId]
     public int ID  { get; set;}
