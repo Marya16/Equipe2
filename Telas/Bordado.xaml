@@ -4,7 +4,9 @@
              x:Class="Equipe2_1.BordadoPage"
              Title="Bordado">
     <ContentPage.Content>
-        <Grid Padding="10" BackgroundColor="LightBlue">
+        <Grid Padding="10" 
+              BackgroundColor="#fae5e3">
+
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto" />
                 <RowDefinition Height="Auto" />
@@ -57,12 +59,21 @@
                 <Button Text="Salvar Dados"
                         BackgroundColor="Green" 
                         TextColor="White"
-                        Clicked="OnSalvarDadosClicked" />
+                        Clicked="OnSalvar5Clicked" />
 
                 <Button Text="Apagar Dados" 
                         BackgroundColor="Red"
                         TextColor="White"
                         Clicked="OnApagarDadosClicked" />
+
+                <Button Text="Voltar"
+                         BackgroundColor="#3385FF"
+                         HorizontalOptions="FillAndExpand"
+                         Clicked="Voltar4Clicked"
+                         Margin="0,5,0,7"
+                         HeightRequest="50"
+                         FontAttributes="Bold"
+                         TextColor="Black"/>    
 
             </StackLayout>
         </Grid>

@@ -16,10 +16,6 @@ namespace Equipe2_1
             // Handle save logic here
         }
 
-        private void OnCancelClicked(object sender, EventArgs e)
-        {
-            // Handle cancel logic here
-        }
 
         private void OnDeleteClicked(object sender, EventArgs e)
         {
@@ -28,6 +24,15 @@ namespace Equipe2_1
             DescriptionEntry.Text = string.Empty;
             ProductCodeEntry.Text = string.Empty;
             QuantityPicker.SelectedIndex = -1;
+        }
+         private void VoltarBClicked (object sender, EventArgs e)  
+      {
+        Application.Current.MainPage= new MainPage();
+      }
+      private async void OnRegister2Clicked(object sender, EventArgs e)
+        {
+            // Registration logic here
+            await DisplayAlert("Cadastro", "Salvo com sucesso!", "OK");
         }
     }
 }

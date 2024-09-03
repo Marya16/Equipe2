@@ -13,6 +13,10 @@ namespace  Equipe2_1
             materiaPrimaList = new ObservableCollection<string>();
             MateriaPrimaList.ItemsSource = materiaPrimaList;
         }
+        private void VoltarClienteClicked (object sender, EventArgs e)  
+      {
+        Application.Current.MainPage= new MainPage();
+      }
 
         private async void OnAddMateriaPrimaClicked(object sender, EventArgs e)
         {

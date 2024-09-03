@@ -16,6 +16,10 @@ namespace Equipe2_1
             CPFEntry.Text = string.Empty;
             TelefoneEntry.Text = string.Empty;
         }
+        private void VoltarClicked (object sender, EventArgs e)  
+      {
+        Application.Current.MainPage= new MainPage();
+      }
 
         private void OnSaveClicked(object sender, EventArgs e)
         {
@@ -30,6 +34,11 @@ namespace Equipe2_1
         private void OnAlreadyRegisteredClicked(object sender, EventArgs e)
         {
             // Lógica para redirecionar para a página de login ou outra página
+        }
+        private async void OnRegister1Clicked(object sender, EventArgs e)
+        {
+            // Registration logic here
+            await DisplayAlert("Cadastro", "Cadastrado com sucesso!", "OK");
         }
     }
 }

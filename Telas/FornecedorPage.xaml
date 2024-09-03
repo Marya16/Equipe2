@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class=" Equipe2_1.FornecedorPage"
-             BackgroundColor="LightBlue">
+             BackgroundColor="#fae5e3">
     <ScrollView>
         <StackLayout Padding="20">
             <Label Text="Cadastrar fornecedor" 
@@ -19,14 +19,7 @@
 
                 <Entry Grid.Row="0" 
                        Grid.Column="1"/>
-                
-                <Label Text="Razão Social:"
-                       Grid.Row="0" 
-                       Grid.Column="2"/>
 
-                <Entry Grid.Row="0" 
-                       Grid.Column="3"/>
-                
                 <Label Text="CPF/CNPJ:" 
                        Grid.Row="1"
                        Grid.Column="2"/>
@@ -48,12 +41,6 @@
                 <Entry Grid.Row="2" 
                        Grid.Column="3"/>
                 
-                <Label Text="Contato 3:" 
-                       Grid.Row="3" 
-                       Grid.Column="2"/>
-
-                <Entry Grid.Row="3" 
-                       Grid.Column="3"/>
                 
                 <Label Text="Fone 1:" 
                        Grid.Row="4" 
@@ -68,13 +55,7 @@
 
                 <Entry Grid.Row="4" 
                        Grid.Column="3"/>
-                
-                <Label Text="Fone 3:" 
-                       Grid.Row="5" 
-                       Grid.Column="2"/>
 
-                <Entry Grid.Row="5" 
-                       Grid.Column="3"/>
                 
                 <Label Text="Email:" 
                        Grid.Row="6" 
@@ -104,10 +85,13 @@
 
                 <Entry Grid.Row="8" 
                        Grid.Column="3"/>
-                
-                <Label Text="Matéria Prima:" 
-                       Grid.Row="9" 
-                       Grid.Column="0"/>
+
+                <Label Text=":" 
+                       Grid.Row="8" 
+                       Grid.Column="2"/>
+
+                <Entry Grid.Row="8" 
+                       Grid.Column="3"/>
 
           <StackLayout Grid.Row="9" 
                        Grid.Column="1"
@@ -134,15 +118,18 @@
                             </DataTemplate>
                         </ListView.ItemTemplate>
                     </ListView>
-                    <Button Text="+" Clicked="OnAddMateriaPrimaClicked"/>
+                    <Button Text="+" 
+                            Clicked="OnAddMateriaPrimaClicked"
+                            HorizontalOptions="FillAndExpand"/>
                 </StackLayout>
-                
-                <Button Text="CADASTRAR-SE"
-                        Grid.Row="10"
-                        Grid.ColumnSpan="4"
-                        BackgroundColor="SkyBlue"
-                        TextColor="White"
-                        HorizontalOptions="Center"/>
+
+                  <!--Botão de Cadastro -->
+
+               <Button Text="Voltar"
+                    BackgroundColor="Dodgerblue"
+                    Clicked="VoltarClienteClicked"
+                    TextColor="Black"/>
+
             </Grid>
         </StackLayout>
     </ScrollView>

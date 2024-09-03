@@ -22,5 +22,14 @@ namespace Equipe2_1
             ProdutoEntry.Text = string.Empty;
            
         }
+          private void Voltar4Clicked (object sender, EventArgs e)  
+      {
+        Application.Current.MainPage= new MainPage();
+      }
+       private async void OnSalvar5Clicked(object sender, EventArgs e)
+        {
+            // Registration logic here
+            await DisplayAlert("Cadastro", " Salvo com sucesso!", "OK");
+        }
     }
 }

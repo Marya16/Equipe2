@@ -5,7 +5,7 @@
             
     <ContentPage.Content>
         <Grid Padding="10" 
-              BackgroundColor="LightBlue">
+              BackgroundColor="#fae5e3">
 
             <Grid.RowDefinitions>
                 <RowDefinition Height="*" />
@@ -62,6 +62,25 @@
                         BorderColor="Black" 
                         BorderWidth="2" 
                         Clicked="OnBordadoClicked" />
+
+                <Button Text="COSTURA"
+                        TextColor="Black"
+                        WidthRequest="200" 
+                        HeightRequest="60" 
+                        BackgroundColor="White" 
+                        BorderColor="Black" 
+                        BorderWidth="2" 
+                        Clicked="OnCosturaClicked" />
+
+               <Button Text="PRODUTO"
+                        TextColor="Black"
+                        WidthRequest="200" 
+                        HeightRequest="60" 
+                        BackgroundColor="White" 
+                        BorderColor="Black" 
+                        BorderWidth="2" 
+                        Clicked="OnProdutoClicked" />         
+                        
             </StackLayout>
         </Grid>
     </ContentPage.Content>

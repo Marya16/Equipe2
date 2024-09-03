@@ -16,6 +16,7 @@
                     <RowDefinition Height="*" />
                     <RowDefinition Height="Auto" />
                     <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
                 </Grid.RowDefinitions>
 
                 <!-- Title -->
@@ -30,13 +31,8 @@
 
                 <Entry Grid.Row="1"  
                        Grid.Column="1"
-                       x:Name="NomeEntry" 
-                       Placeholder="Nome" />
+                       x:Name="NomeEntry" />
 
-                <Label Grid.Row="1" 
-                       Grid.Column="2" 
-                       Text="*" 
-                       TextColor="Red" />
 
                 <!-- Surname -->
                 <Label Grid.Row="2" 
@@ -44,13 +40,7 @@
 
                 <Entry Grid.Row="2" 
                        Grid.Column="1"
-                       x:Name="SobrenomeEntry"
-                       Placeholder="Sobrenome" />
-
-                <Label Grid.Row="2" 
-                       Grid.Column="2" 
-                       Text="*" 
-                       TextColor="Red" />
+                       x:Name="SobrenomeEntry"/>
 
                 <!-- CPF -->
                 <Label Grid.Row="3" 
@@ -58,13 +48,7 @@
 
                 <Entry Grid.Row="3" 
                        Grid.Column="1" 
-                       x:Name="CPFEntry" 
-                       Placeholder="CPF" />
-
-                <Label Grid.Row="3" 
-                       Grid.Column="2" 
-                       Text="*" 
-                       TextColor="Red" />
+                       x:Name="CPFEntry" />
 
                 <!-- Phone -->
                 <Label Grid.Row="4" 
@@ -72,44 +56,37 @@
 
                 <Entry Grid.Row="4"  
                        Grid.Column="1" 
-                       x:Name="TelefoneEntry"
-                       Placeholder="Telefone" />
+                       x:Name="TelefoneEntry"/>
 
-                <Label Grid.Row="4" 
-                       Grid.Column="2"  
-                       Text="*" 
-                       TextColor="Red" />
-
-                <!-- Action Buttons -->
-                <StackLayout Grid.Row="5" 
-                             Orientation="Horizontal"
-                             HorizontalOptions="Center">
-
-                    <Button Text="❌" 
-                            Clicked="OnClearClicked" />
-
-                    <Button Text="✅" 
-                            Clicked="OnSaveClicked" />
-
-                </StackLayout>
-
+       
                 <!-- Register Button -->
                 <Button Grid.Row="6" 
                         Text="CADASTRAR-SE"
                         HorizontalOptions="Center"
                         VerticalOptions="End" 
-                        Clicked="OnRegisterClicked" />
+                        Clicked="OnRegister1Clicked" />
 
                 <!-- Already Registered -->
                 <StackLayout Grid.Row="7" 
                              Orientation="Horizontal" 
                              HorizontalOptions="Center">
 
-                    <Label Text="Possuo cadastro>>" />
 
                     <ImageButton Source="user_icon.png" 
                                  Clicked="OnAlreadyRegisteredClicked" />
                     
+                     <!--Botão de Cadastro -->      
+        
+            <Button Text="Voltar"
+                    BackgroundColor="Dodgerblue"
+                     Grid.Row="7" 
+                    HorizontalOptions="FillAndExpand"
+                    Clicked="VoltarClicked"
+                    Margin="0,5,0,0"
+                    HeightRequest="50"
+                    FontAttributes="Bold"
+                    TextColor="Black"/>
+
                 </StackLayout>
             </Grid>
         </ScrollView>

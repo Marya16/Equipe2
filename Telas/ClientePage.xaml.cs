@@ -14,7 +14,7 @@ namespace Equipe2_1
       }
       private void CadastrarClienteClicked (object sender, EventArgs e)  
       {
-        Application.Current.MainPage= new CadastroClientePage();
+        Application.Current.MainPage= new CadastrarClientePage();
       }
       // Aqui você pode adicionar event handlers e outras lógicas 
     }

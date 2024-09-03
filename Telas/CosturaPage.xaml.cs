@@ -27,5 +27,14 @@ namespace Equipe2_1
             QuantidadePicker.SelectedIndex = -1;
             PrazoEntry.Text = string.Empty;
         }
+         private void Voltar2Clicked (object sender, EventArgs e)  
+      {
+        Application.Current.MainPage= new MainPage();
+      }
+      private async void OnSalvar1Clicked(object sender, EventArgs e)
+        {
+            // Registration logic here
+            await DisplayAlert("Cadastro", "Salvo com sucesso!", "OK");
+        }
     }
 }

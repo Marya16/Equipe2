@@ -5,7 +5,9 @@
              
              Title="Produto">
     <ContentPage.Content>
-        <Grid Padding="10" BackgroundColor="LightBlue">
+        <Grid Padding="10" 
+              BackgroundColor="#fae5e3">
+
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto" />
                 <RowDefinition Height="Auto" />
@@ -75,29 +77,31 @@
                 </Picker.ItemsSource>
             </Picker>
 
-            <Label Text="Cor:" 
-                    Grid.Row="6"
-                    Grid.Column="0" />
-
-            <Entry x:Name="CorEntry" 
-                    Grid.Row="6" 
-                    Grid.Column="1" />
 
             <StackLayout Orientation="Horizontal" 
                          HorizontalOptions="Center" 
-                         Grid.Row="7"
+                         Grid.Row="6"
                          Grid.ColumnSpan="2" 
                          Spacing="20">
 
                 <Button Text="Salvar Dados"
                         BackgroundColor="Green"
                         TextColor="White"
-                        Clicked="OnSalvarDadosClicked" />
+                        Clicked="OnRegisdter3Clicke"/>
 
                 <Button Text="Apagar Dados"
                         BackgroundColor="Red"
                         TextColor="White"
                         Clicked="OnApagarDadosClicked" />
+
+                 <Button Text="Voltar"
+                         BackgroundColor="#3385FF"
+                         HorizontalOptions="FillAndExpand"
+                         Clicked="Voltar1Clicked"
+                         HeightRequest="50"
+                         FontAttributes="Bold"
+                         TextColor="Black"/>
+                                             
 
             </StackLayout>
         </Grid>

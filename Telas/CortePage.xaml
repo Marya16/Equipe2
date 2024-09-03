@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Equipe2_1.CortePage"
-             BackgroundColor="LightSkyBlue"
+             BackgroundColor="#fae5e3"
              Title="Corte">
 
     <ContentPage.Content>
@@ -84,15 +84,21 @@
                              Margin="0,20,0,0">
 
                     <Button Text="SALVAR"
-                            Clicked="OnSaveClicked"
+                            Clicked="OnRegister2Clicked" 
                             BackgroundColor="#3385FF"
                             TextColor="White" 
                             Margin="0,0,10,0"/>
 
-                    <Button Text="CANCELAR" 
-                            Clicked="OnCancelClicked" 
-                            BackgroundColor="#3385FF" 
-                            TextColor="White" />
+
+                     <Button Text="Voltar"
+                            BackgroundColor="#3385FF"
+                            HorizontalOptions="FillAndExpand"
+                            Clicked="VoltarBClicked"
+                            Margin="0,5,0,7"
+                            HeightRequest="50"
+                            FontAttributes="Bold"
+                            TextColor="Black"/>
+                                     
 
                 </StackLayout>
 
@@ -103,12 +109,6 @@
                             Clicked="OnDeleteClicked"
                             BackgroundColor="#FF0000" 
                             TextColor="White">
-
-                        <Button.ImageSource>
-                            <FontImageSource Glyph="&#xE711;" 
-                                             FontFamily="Segoe MDL2 Assets" />
-
-                        </Button.ImageSource>
                     </Button>
                 </StackLayout>
             </StackLayout>

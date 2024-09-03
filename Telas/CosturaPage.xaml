@@ -5,7 +5,9 @@
              Title="Costura">
              
     <ContentPage.Content>
-        <Grid Padding="10" BackgroundColor="LightBlue">
+        <Grid Padding="10" 
+              BackgroundColor="#fae5e3">
+
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto" />
                 <RowDefinition Height="Auto" />
@@ -76,17 +78,18 @@
                          Spacing="10">
 
                 <Button Text="Salvar" 
-                        BackgroundColor="LightBlue"
-                        Clicked="OnSalvarClicked" />
-
-                <Button Text="Cancelar" 
-                        BackgroundColor="LightBlue" 
-                        Clicked="OnCancelarClicked" />
+                        BackgroundColor="Red" 
+                        Clicked="OnSalvar1Clicked" />
 
                 <Button Text="Apagar Dados" 
-                        BackgroundColor="Red" 
+                        BackgroundColor="Blue" 
                         TextColor="White" 
                         Clicked="OnApagarDadosClicked" />
+
+                <Button Text="Voltar"
+                         BackgroundColor="#3385FF"
+                         Clicked="Voltar2Clicked"
+                         TextColor="Black"/>        
 
             </StackLayout>
         </Grid>

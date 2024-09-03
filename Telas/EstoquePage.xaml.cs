@@ -12,7 +12,11 @@ namespace Equipe2_1
         private async void OnRegisterClicked(object sender, EventArgs e)
         {
             // Registration logic here
-            await DisplayAlert("Cadastro", "Produto cadastrado com sucesso!", "OK");
+            await DisplayAlert("Cadastro", "Cadastrado com sucesso!", "OK");
         }
+         private void VoltarClicked (object sender, EventArgs e)  
+      {
+        Application.Current.MainPage= new MainPage();
+      }
     }
 }

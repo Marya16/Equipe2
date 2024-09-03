@@ -22,7 +22,15 @@ namespace Equipe2_1
             CodigoProdutoEntry.Text = string.Empty;
             MarcaEntry.Text = string.Empty;
             UnidadePicker.SelectedIndex = -1;
-            CorEntry.Text = string.Empty;
+        }
+          private void Voltar1Clicked (object sender, EventArgs e)  
+      {
+        Application.Current.MainPage= new MainPage();
+      }
+      private async void OnRegisdter3Clicke(object sender, EventArgs e)
+        {
+            // Registration logic here
+            await DisplayAlert("Cadastro", "Salvo com sucesso!", "OK");
         }
     }
 }

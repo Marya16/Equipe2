@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Equipe2_1.MateriaprimaPage"
 
-             BackgroundColor="LightBlue">
+             BackgroundColor="#fae5e3">
     <ScrollView>
         <StackLayout Padding="20">
             <Label Text="Matéria Prima" 

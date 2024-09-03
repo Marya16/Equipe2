@@ -39,8 +39,22 @@ namespace Equipe2_1
 
         private void OnBordadoClicked(object sender, EventArgs e)
         {
+            Application.Current.MainPage= new BordadoPage();
             // Navigate to the Bordado page
             // Navigation.PushAsync(new BordadoPage());
         }
+         private void OnCosturaClicked(object sender, EventArgs e)
+        {
+			Application.Current.MainPage= new CosturaPage();
+            // Navigate to the Costura page
+            // Navigation.PushAsync(new CosturaPage());
+        }
+ private void OnProdutoClicked(object sender, EventArgs e)
+        {
+			Application.Current.MainPage= new ProdutoPage();
+            // Navigate to the Produto page
+            // Navigation.PushAsync(new ProdutoPage());
+        }
+
     }
 }
