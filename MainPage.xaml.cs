@@ -11,9 +11,9 @@ namespace Equipe2_1
 
         private void OnClienteClicked(object sender, EventArgs e)
         {
-			Application.Current.MainPage= new ClientePage();
+			Application.Current.MainPage= new CadastrarClientePage();
             // Navigate to the Cliente page
-            // Navigation.PushAsync(new ClientePage());
+            // Navigation.PushAsync(new CadastroClientePage());
         }
 
         private void OnFornecedorClicked(object sender, EventArgs e)
